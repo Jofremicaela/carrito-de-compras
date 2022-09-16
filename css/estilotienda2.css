@@ -1,0 +1,926 @@
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	   
+	}
+
+	body {
+		background-color: gray;
+	}
+/* ----------------------------contenedor general--------------------------------*/
+.contenedor-general{
+	background: white;
+	width: 100%;
+	max-width: 2000px;
+	height: auto;
+	margin: 0 ;
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-flow: row wrap ;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*------------------------------- header-----------------------------------*/
+
+header{
+	margin: 0;
+	width: 100%;
+	height: 33px;
+	background: gray;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-flow: row nowrap ;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ header img{
+ 	width: 20px;
+ 	height: 20px;
+ 	align-items: center;
+ 	text-align: center;
+ 	align-content: center;
+ 	margin-left: 30px;
+ }
+ header li{
+ 	display: inline-block;
+ }
+
+ header .redes img{
+ 	margin-right: 30px;
+ 	align-content: center;
+ 	align-items: center;
+ 	text-align: center;
+ }
+
+header .redes li:hover{
+	background: lightblue;
+	height: 100%;
+}
+
+
+
+/*---------------------------------nav-------------------------------------*/
+nav{
+	width: 100%;
+	height: 100px;
+	background: white;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-flow: row wrap ;
+	align-content: center;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav ul li{
+	display: inline-block;
+	text-align: center;
+	margin: 5%;
+}
+
+.menu-nav a{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+nav img{
+	width:12px;
+	height: 12px; 
+	
+}
+
+nav ul{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+nav hr{
+	width: 100%;
+	color: gray;
+}
+
+/*---------------------------contenedor aside-----------------------------*/
+.contenedor-aside{
+	width: 100%;
+	height: 55%;
+	background: white;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-flow: row wrap ;
+	justify-content: center;
+	
+
+}
+
+                                   /*-------------------aside left-------------------*/
+
+
+.categorias {
+	width: 100%;
+	height: 65px;
+	background: white;
+	margin: 0;
+}
+.left h2{
+	text-align:center;
+	color: orange;
+	font-size: 45px;
+}
+
+.left hr{
+	width: 75%;
+	margin-left: 15%;
+	margin-top: 2px;
+	color: gray;
+}
+
+.left{
+	width: 25%;
+	height: auto;
+	background: white;
+	margin: 0;
+	border-right: solid 1px gray;
+}
+
+.left ul{
+	list-style: none;
+}
+
+..menu-izquierda li{
+	display: inline-block;
+}
+
+.menu-izquierda li:hover{
+	background: orange;
+}
+.menu-izquierda li:hover .children{
+	display: block;
+}
+
+.menu-izquierda  li .children{
+	display: none;
+}
+
+.children:hover{
+	background: white;
+}
+.children li{
+	margin-top: 5px;
+}
+
+.menu-izquierda ul{
+	list-style: none;
+	position: relative;
+}
+
+.menu-izquierda h3{
+	font-size: 20px;
+	color: gray;
+	margin-left: 20px;
+}
+.menu-izquierda img{
+	width: 15px;
+	height: 15px;
+}
+.submenu span:hover{
+	background: black;
+	color: black;
+}
+
+
+.icono-mas1{
+	margin-left: 150px;
+}
+.icono-mas2{
+	margin-left: 155px;
+}
+.icono-mas3{
+	margin-left: 163px;
+}
+
+
+/*----------------menu Marcas--------------*/
+
+.marcas{
+	width: 100%;
+	height: 50px;
+	background: white;
+}
+
+.menu-marcas li h3{
+	font-size: 20px;
+	color: gray;
+	margin-left: 20px;
+}
+
+.menu-marcas .numero1{
+	margin-left: 180px;
+}
+.numero2{
+	margin-left: 155px;
+}
+.numero3 {
+	margin-left: 133px;
+}
+
+.numero4{
+	margin-left: 64px;
+}
+.numero5 {
+	margin-left: 175px;
+}
+
+.numero6{
+	margin-left: 182px;
+}
+.numero7{
+	margin-left: 113px;
+}
+.menu-marcas li:hover{
+	background: orange;
+}
+
+/*------- CUADRO DE RANGO DE PRECIOS-------*/
+.boton-slide{
+	width: 100%;
+	height:215px;
+	background: white;
+	margin: 0;
+	margin-top: 150px;
+	padding:0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+ .boton-slide h2{
+ 	color: orange;
+ 	font-size: 40px;
+ 	text-align: center;
+ }
+
+ .boton-slide .toggle{
+ 	width: 40%;
+ 	height: 30%;
+ 	text-align: center;
+ 	align-content: center;
+ 	margin: 0 auto;
+ }
+.boton-slide label{
+	display: block;
+	width: 100%;
+	height: 30%;
+	overflow: hidden;
+	align-content: center;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: gray;
+	transition: 1s;
+}
+
+.boton-slide label::before{
+	content: "";
+	width: 20px;
+	height: 100%;
+	background-color: white;
+	border-radius: 50%;
+	display: block;
+	transform: translate(calc(114px),0px );
+	transition: all 1s;
+
+}
+
+input[type= "checkbox"]{
+	display: none;
+}
+
+input[type= "checkbox"]:checked ~ label:before{
+	transform: translate(0px,0px);
+}
+
+input[type= "checkbox"]:checked ~ label{
+	background-color:orange;
+}
+
+.texto{
+	background-color:white;
+	width: 100;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.boton-slide .texto2{
+	margin-left: 80px;
+}
+
+
+
+                                    /*--------------------aside right---------------------*/
+
+
+.contenedor-aside .right{
+	width: 75%;
+	height:auto;
+	background: white;
+	margin: 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	align-content: center;	
+}
+
+
+.Articulos{
+	width: 100%;
+	height: 66px;
+	background: white;
+	margin:0;
+	margin-bottom: 100px;
+	
+}
+
+.Articulos hr{
+	width: 450px;
+	margin: 0;
+	margin-left: 270px; 
+	margin-top: 2px;
+	color: gray;
+}
+
+.Articulos h2{
+	text-align: center;
+	color: orange;
+	font-size: 45px;
+}
+
+
+.contenedor-ventas{
+	margin: 0;
+	margin-bottom: 300px;
+	padding: 0;
+	width: 100%;
+	height: 1000px;
+	background: white;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+	overflow: hidden;
+}
+
+ .contenedor-ventas figcaption{
+	width: 300px;
+	height: 405px;
+	margin: 3px;
+	background: white;
+	font-size: xx-large;
+	color: orange;
+	border:solid 1px gray;
+}
+
+.contenedor-ventas img{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	margin-top: 2px;
+}
+
+.contenedor-ventas button{
+	background: gray;
+	width: 50%;
+	height: 30px;
+	margin-top: 7px;
+}
+
+.contenedor-ventas button img{
+	width:12px;
+	height: 12px;
+	margin-right: 5px;
+} 
+
+.contenedor-ventas .opciones img{
+	width: 12px;
+	height: 12px;
+	margin: 0 5px 5px;
+	
+	
+}
+
+.contenedor-ventas .opciones{
+	font-size: small;
+	color: gray;
+}
+
+.contenedor-ventas figcaption .capa{
+	width: 29.5%;
+	height: 355px;
+	margin:0;
+	background: orange;
+	font-size: xx-large;
+	color: white;
+	position: absolute;
+	text-align: center;
+	visibility: hidden;
+
+}
+.capa h3{
+	margin-top: 270px;
+}
+
+.capa button{
+	background: white;
+	width: 50%;
+	height: 30px;
+}
+
+.contenedor-ventas figcaption:hover > .capa{
+	visibility: visible;
+	opacity: 3;
+}
+
+
+
+
+
+/*-----------------------------------main---------------------------------*/
+main{
+	background: black;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-flow: row wrap ;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.menu2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.menu2 li{
+	list-style: none;
+	margin: 0 25px;
+	transition: 0,5s;
+
+}
+
+li a{
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	font-size: 20px;
+	
+}
+main ul:hover li a{
+	transform: scale(1.5);
+	opacity: .1;
+	filter: blur(3px);
+}
+
+main ul li a:hover{
+	transform: scale(2);
+	opacity: 1;
+	filter: blur(0);
+
+}
+ main ul li a:before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	left:0;
+ 	width: 100%;
+ 	height: 90%;
+ 	background-color: orange;
+ 	transition: transform 0.2s;
+ 	transform-origin: right;
+ 	transform: scale(0);
+ 	z-index: -1;
+ }
+
+main ul li a:hover:before{
+	transition: transform 0.2s;
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+
+/*----------------------------------------riht2--------------------------------*/
+.right2{
+	width: 76%;
+	height: 21%;
+	margin-left: 335px;
+	background: orange;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-flow: row wrap ;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.right2 figure{
+	width:100%;
+	height: 85%;
+	background: white;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	position: relative;
+
+}
+
+.right2 figure figcaption{
+	width: 235px;
+	height: 380px;
+	background: white;
+	margin-top: 8px;
+	border:solid 1px gray;
+}
+
+.contenedor-ventas1 figcaption img{
+	width: 95%;
+	height: auto;
+	margin: 1px;
+	
+}
+
+.contenedor-ventas1 button{
+	background: gray;
+	width: 50%;
+	height: 30px;
+	margin-top: 60px;
+}
+
+.caja3 button {
+	margin-top: 47px;
+}
+
+.caja1 .capa2 button, .caja2 .capa2 button{
+	margin-top: 15px;
+
+}
+
+.contenedor-ventas1 button img{
+	width:12px;
+	height: 12px;
+} 
+
+
+.contenedor-ventas1 figcaption .capa2{
+	width: 235px;
+	height: 380px;
+	margin:0;
+	background: orange;
+	font-size: xx-large;
+	color: white;
+	position: absolute;
+	text-align: center;
+	visibility: hidden;
+}
+.contenedor-ventas1 figcaption:hover > .capa2{
+	visibility: visible;
+	opacity: 3;
+}
+.capa2 h3{
+	margin-top:200px; 
+}
+
+.capa2 button{
+	background: white;
+}
+
+
+
+
+
+/*------------------------------------- footer----------------------------------*/
+footer{
+	width: 100%;
+	height: 14%;
+	background: yellow;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    flex-flow: row wrap ;
+    
+
+}
+
+footer ul{
+	list-style: none;
+	margin: 0 25px;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+
+/*-----------------------------------responsive---------------------------------*/
+
+@media screen and (max-width: 800px){
+	.categorias h2{
+		font-size: 20px;
+	}
+	.marcas h2{
+		font-size: 20px;
+	}
+	.boton-slide h2{
+		font-size: 20px;
+	}
+	.right h2{
+		font-size: 20px;
+	}
+
+	.Articulos hr{
+		margin-left: 100px;
+	}
+
+	.contenedor-ventas figcaption {
+		width: 70%;
+		height: 400px;
+	}
+
+	.left .icono-mas1{
+	margin-left: 20px;
+}
+    .left .icono-mas2{
+	margin-left: 25px;
+}
+    .left .icono-mas3{
+	margin-left: 34px;
+}
+
+.menu-marcas .numero1{
+	margin-left: 50px;
+}
+.numero2{
+	margin-left: 22px;
+}
+.numero3 {
+	margin-left: 0px;
+}
+
+.numero4{
+	margin-left: 14px;
+}
+.numero5 {
+	margin-left: 40px;
+}
+
+.numero6{
+	margin-left: 47px;
+}
+.numero7{
+	margin-left: 0px;
+}
+
+.boton-slide .texto2{
+	margin-left: 20px;
+}
+
+.Articulos{
+	margin-bottom: 0px;
+	
+}
+
+.contenedor-ventas{
+	width: 100%;
+	height: 1300px;
+}
+
+.contenedor-ventas figcaption{
+	width: 45%;
+	height: 400px;
+	margin: 0px;
+	background: white;
+	font-size: x-large;
+}
+
+.contenedor-ventas figcaption button{
+	
+	width: 50%;
+	height: 40px;
+}
+
+.contenedor-ventas figcaption .capa{
+	width: 257px;
+	height: 315px;
+}
+.capa h3{
+	margin-top: 140px;
+}
+
+.right2{
+	width: 100%;
+	height: 21%;
+	align-content: center;
+	margin: 0;
+}
+
+main li a{
+	text-decoration: none;
+	list-style: none;
+	
+	
+}
+
+.contenedor-ventas1 figcaption .capa2{
+	width: 190px;
+	height: 380px;
+}
+
+.contenedor-ventas1 button{
+	height: 40px;
+}
+
+footer ul{
+	list-style: none;
+	margin: 0 15px;
+	font-size: 17px;
+	margin-top: 15px;
+}
+
+}
+
+
+
+@media screen and (max-device-width:480px) {
+	header{
+	width: 100%;
+	height: 50px;
+	font-size: 13px;
+
+}
+
+    header img{
+ 	width: 13px;
+ 	height: 13px;
+ 	margin: 0;
+ }
+
+ header .redes img{
+ 	margin-right: 10px;
+ }
+
+header .redes li:hover{
+	background: lightblue;
+	height: 100%;
+}
+
+.menu-nav a{
+	font-size: 10px;
+}
+ 	
+.menu-izquierda h3{
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+.menu-marcas li h3{
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+.left img{
+	width: 10px;
+	height: 10px;
+}
+
+.left .icono-mas1{
+	margin-left: 76px;
+}
+
+.left .icono-mas3{
+	margin-left: 76px;
+}
+
+.menu-marcas .numero1{
+	margin-left: 50px;
+}
+.numero2{
+	margin-left: 38px;
+}
+.numero3 {
+	margin-left: 27px;
+}
+
+.numero4{
+	margin-left: 35px;
+}
+.numero5 {
+	margin-left: 50px;
+}
+
+.numero6{
+	margin-left: 55px;
+}
+.numero7{
+	margin-left: 50px;
+}
+
+.right .Articulos hr{
+		margin-left: 0px;
+		width: 310px;
+	}
+
+.contenedor-ventas figcaption {
+		width: 50%;
+		height: 300px;
+	}
+
+
+.boton-slide .texto2{
+	margin-left: 0px;
+}
+
+.boton-slide .toggle{
+ 	width: 87%;
+ 	height: 30%;
+ }
+
+.contenedor-ventas figcaption .capa{
+	width: 50%;
+	height: 230px;
+}
+
+.contenedor-ventas .capa h3{
+	margin-top: 90px;
+	font-size: 30px;
+}
+
+li a{
+	font-size: 10px;
+}
+
+.menu2 li{
+	margin: 0 15px;
+}
+
+.contenedor-ventas1 button{
+	width: 70%;
+	height: 55px;
+	margin-top: 70px;
+}
+
+
+.contenedor-ventas1 .caja2 button{
+	margin-top: 80px;
+}
+
+.contenedor-ventas1 .caja3 button{
+	margin-top: 100px;
+}
+
+.contenedor-ventas1 .caja4 button{
+	margin-top: 105px;
+}
+
+.contenedor-ventas1 figcaption .capa2{
+	width: 26%;
+	height: 380px;
+	font-size: medium;
+	
+}
+
+.contenedor-ventas1 .capa2 button{
+
+	margin-top: 40px;
+}

@@ -1,0 +1,56 @@
+body{
+	background-image: url(../img/fondo.jpg);
+	background-size: 100vw 105vh;
+	background-attachment: fixed; 
+	margin: 0;
+}
+form {
+	width: 500px;
+	margin: 0;
+	background: rgba(0,0,0,0.4);
+	box-sizing: border-box;
+	padding: 30px 70px;
+	margin-top: 90px;
+	margin-left: 20px;
+	border-radius: 5px;
+	-webkit-box-shadow: -5px 4px 35px 9px rgba(237,161,107,1);
+     -moz-box-shadow: -5px 4px 35px 9px rgba(237,161,107,1);
+     box-shadow: -5px 4px 35px 9px rgba(237,161,107,1);
+}
+h2{
+	color: orange;
+	text-align: center;
+	margin: 0;
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+input, textarea {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 5px;
+	border: none;
+}
+textarea{
+	min-height: 100px;
+	max-height: 170px;
+	max-width: 100%;
+}
+
+#Boton{
+	background: orange;
+	padding: 7px;
+	color:white;
+	font-size: 20px;
+}
+.Boton:hover{
+	cursor: pointer;
+}
+
+/*----responsive----*/
+
+@media (max-width: 480px){
+	form{
+		width: 100%;
+	}
+}
